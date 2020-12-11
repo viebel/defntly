@@ -1,6 +1,6 @@
 # defntly
 
-A utility function to create `defn` like macros in Clojure/Script
+A library that makes the creation of `defn` like macros in Clojure/Script a commodity.
 
 # Usage
 
