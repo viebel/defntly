@@ -16,7 +16,7 @@ One way to wrap the body of a function `f` is to create a high order function th
   (fn [& args]
      (try 
       (apply f args)
-      (catch Throwable ~e
+      (catch Throwable e
         (throw (Exception. (str "Exception caught in function " name ": " e))))
         
 (defn foo [a b]
