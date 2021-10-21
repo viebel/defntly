@@ -3,8 +3,12 @@
             [clojure.core.specs.alpha :as specs]))
 
 
-;;there is a problem with this defn-args spec: unform and conform are not fully inlined (unform returns lists instead of vectors).
+;; There is a problem with this defn-args spec: unform and conform are not fully inlined (unform returns lists instead of vectors).
 ;; The cool thing is that we can monkey patch :defn-args so that unform and conform are fully inlined.
+(s/def ::specs/binding-form
+  (s/or :local-symbol ::specs/local-name
+        :seq-destructure ::specs/seq-binding-form
+        :map-destructure ::specs/map-binding-form))
 
 (s/def ::specs/seq-binding-form
   (s/and vector?
