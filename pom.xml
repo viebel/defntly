@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>viebel</groupId>
+  <artifactId>defntly</artifactId>
+  <packaging>jar</packaging>
+  <version>0.0.2</version>
+  <name>defntly</name>
+  <description>A utility function to create `defn` like macros in Clojure/Script</description>
+  <url>https://github.com/viebel/defntly</url>
+  <licenses>
+    <license>
+      <name>GPL-3.0</name>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://github.com/viebel/defntly</url>
+    <connection>scm:git:git://github.com/viebel/defntly.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/viebel/defntly.git</developerConnection>
+    <tag>786502511bddf41071b659890d36b2424bb87fab</tag>
+  </scm>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>resources</directory>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>resources</directory>
+      </testResource>
+    </testResources>
+    <directory>target</directory>
+    <outputDirectory>target/classes</outputDirectory>
+    <plugins/>
+  </build>
+  <distributionManagement>
+    <repository>
+      <id>clojars</id>
+      <url>https://repo.clojars.org/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </distributionManagement>
+  <dependencyManagement>
+    <dependencies/>
+  </dependencyManagement>
+  <dependencies/>
+</project>
