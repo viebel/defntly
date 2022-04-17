@@ -60,7 +60,7 @@ Leiningen/Boot: `[viebel/defntly "0.0.1"]`
 Clojure CLI/deps.edn: `viebel/defntly {:mvn/version "0.0.1"}`
 
 ```clj
-(require '[dfntly.core :refer [defn-update-body]])
+(require '[defntly.core :refer [defn-update-body]])
 ```
 
 # Examples
@@ -68,7 +68,7 @@ Clojure CLI/deps.edn: `viebel/defntly {:mvn/version "0.0.1"}`
 Let's create a `defn-try` macro that automatically wraps the function body in a `try/catch` form.
 
 ```clj
-(require '[dfntly.core :refer [defn-update-body]])
+(require '[defntly.core :refer [defn-update-body]])
 
 (defn wrap-try [name body]
   `((try ~@body
